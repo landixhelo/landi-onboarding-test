@@ -132,3 +132,52 @@ html, body {
     text-align: center;
     margin-top: 10px;
 }
+
+
+/* accordion*/
+.pos {
+    margin: 50px auto;
+}
+.accordion {
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    overflow: hidden;
+    margin: 10px 0;
+}
+
+.accordion-item {
+    border-bottom: 1px solid #ccc;
+}
+
+.accordion-item:last-child {
+    border-bottom: none;
+}
+
+.accordion-title {
+    background: #007bff;
+    color: white;
+    cursor: pointer;
+    padding: 10px;
+    position: relative;
+}
+
+.accordion-title::after {
+    content: "\25B2";
+}
+
+.accordion-content {
+    display: none;
+    padding: 10px;
+    background: #f1f1f1;
+}
+
+.accordion-content.show {
+    display: block;
+}
+
+.multiple-checkbox {
+    padding: 20px ;
+    color: white;
+    border-bottom: 2px solid white;
+    background-color: #007bff;
+}

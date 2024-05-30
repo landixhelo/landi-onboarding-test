@@ -25,3 +25,38 @@ document.querySelectorAll('#contactForm input, #contactForm textarea').forEach(f
         }
     });
 });
+
+// accordion
+document.addEventListener('DOMContentLoaded', function() {
+    const multipleCheckbox = document.getElementById('multiple');
+    const accordionItems = document.querySelectorAll('.accordion-item');
+    const firstItemContent = accordionItems[0].querySelector('.accordion-content');
+    const firstItemTitle = accordionItems[0].querySelector('.accordion-title');
+
+   
+    firstItemContent.classList.add('show');
+    firstItemTitle.classList.add('active');
+
+    accordionItems.forEach(item => {
+        const title = item.querySelector('.accordion-title');
+        const content = item.querySelector('.accordion-content');
+
+        title.addEventListener('click', () => {
+            if (multipleCheckbox.checked) {
+                content.classList.toggle('show');
+                title.classList.toggle('active');
+            } else {
+                accordionItems.forEach(otherItem => {
+                    const otherContent = otherItem.querySelector('.accordion-content');
+                    const otherTitle = otherItem.querySelector('.accordion-title');
+                    if (otherItem !== item) {
+                        otherContent.classList.remove('show');
+                        otherTitle.classList.remove('active');
+                    }
+                });
+                content.classList.toggle('show');
+                title.classList.toggle('active');
+            }
+        });
+    });
+});
