@@ -1,0 +1,51 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+}
+
+.card {
+    background: #000;
+    width: 100%;
+    padding: 20px;
+}
+
+.col-xl-4 {
+    margin: 20px auto;
+}
+
+.card .card-img img {
+    width: 100%;
+}
+
+.card .card-desc {
+    text-align: center;
+    margin: 20px;
+}
+
+.card .card-desc h2 {
+    font-size: 20px;
+    color: white;
+}
+
+.card .card-desc p {
+    color: white;
+    text-decoration: underline;
+    font-size: 20px;
+}
+
+.card-desc .btn-1 {
+    background-color: #499575;
+    padding: 10px 20px;
+    border-radius: 50px;
+    width: 70%;
+    border: none;
+}
+
+.card-desc .btn-1 a {
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+}
