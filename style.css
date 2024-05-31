@@ -49,3 +49,48 @@ html, body {
     text-decoration: none;
     font-size: 20px;
 }
+
+/* filter */
+#filter {
+    padding: 70px 0;
+}
+.filter-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.filter-btn {
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: 2px solid #45a7b1;
+    background-color: #45a6b142;
+    cursor: pointer;
+    color: #45a7b1;
+    transition: background-color 0.3s;
+}
+
+.filter-btn.active {
+    background-color: #45a7b1;
+    color: white;
+}
+
+.logo-container {
+    display: flex !important;
+    flex-wrap: wrap !important;
+    gap: 20px;
+}
+
+
+.logo {
+    display: none;
+    transition: opacity 1.5s;
+}
+
+.logo img {
+    border: 2px solid grey;
+    height: 150px;
+    width: 150px;
+    margin: 15px 0;
+}
