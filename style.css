@@ -49,3 +49,50 @@ html, body {
     text-decoration: none;
     font-size: 20px;
 }
+
+/* tabs-content */
+.tabs-style {
+    background-color: #88d7d2;
+    padding: 30px;
+}
+.tab-content {
+    display: none;
+}
+
+.active-tab-content {
+    display: block;
+    animation: floatRightToLeft 0.5s ease-in-out;
+}
+
+.tab-content h2 {
+    color: black;
+    margin: 20px 0;
+}
+
+.tab-content p {
+    color: grey;
+}
+@keyframes floatRightToLeft {
+    from {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+.tab-item {
+    cursor: pointer;
+    padding: 10px 20px;
+    background-color: grey;
+    color: white;
+    display: inline-block;
+    margin-right: 10px;
+    border-radius: 5px;
+}
+
+.active {
+    background-color: #588d7d;
+}
