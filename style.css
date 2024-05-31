@@ -49,3 +49,107 @@ html, body {
     text-decoration: none;
     font-size: 20px;
 }
+
+/* very simple slider */
+.slider-container {
+    position: relative;
+    width: 100%;
+    max-width: 80%;
+    padding: 80px;
+    overflow: hidden;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    height: 100%;
+    background-color:  #499575;
+    margin: 50px auto;
+}
+
+.text-header {
+    color: white;
+    font-size: 30px;
+    margin: 20px auto;
+}
+.slider {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.slide {
+    min-width: 100%;
+    box-sizing: border-box;
+    display: none;
+    position: relative;
+}
+
+.slide.active {
+    display: block;
+}
+
+.slide-1 {
+    background: url(img/beach-1.jpg) rgba(0, 0, 0, 0.40);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-blend-mode: multiply;
+    height: 70vh;
+    border-radius: 5px;
+}
+
+.slide-2 {
+    background: url(img/beach-2.jpg) rgba(0, 0, 0, 0.40);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-blend-mode: multiply;
+    height: 70vh;
+    border-radius: 5px;
+}
+
+.slide-3 {
+    background: url(img/beach-3.jpg) rgba(0, 0, 0, 0.40);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-blend-mode: multiply;
+    height: 70vh;
+    border-radius: 5px;
+}
+
+
+
+.caption {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%,-50%);
+    color: white;
+}
+
+.nav {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color:  #49957591;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    align-items: center;
+}
+
+.nav.prev {
+    left: 30px;
+    height: 80px;
+    width: 50px;
+}
+
+.nav.next {
+    right: 30px;
+    height: 80px;
+    width: 50px;
+}
+
+.autoplay-container {
+    margin: 30px auto;
+}
