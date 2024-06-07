@@ -1,0 +1,96 @@
+
+/* tabs-content */
+.tabs-style {
+    background-color: #88d7d2;
+    padding: 30px;
+}
+.tab-content {
+    display: none;
+}
+
+.active-tab-content {
+    display: block;
+    animation: floatRightToLeft 0.5s ease-in-out;
+}
+
+.tab-content h2 {
+    color: black;
+    margin: 20px 0;
+}
+
+.tab-content p {
+    color: grey;
+}
+@keyframes floatRightToLeft {
+    from {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+.tab-item {
+    cursor: pointer;
+    padding: 10px 20px;
+    background-color: grey;
+    color: white;
+    display: inline-block;
+    margin-right: 10px;
+    border-radius: 5px;
+}
+
+.active {
+    background-color: #588d7d;
+}
+
+/* accordions */
+
+.accordion {
+    background-color: #007bff;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    overflow: hidden;
+    margin: 10px 0;
+    padding: 20px ;
+}
+
+.multiple-checkbox label {
+    color: white;
+}
+.accordion-item {
+    border: 2px solid #ccc;
+}
+.accordion-item:last-child {
+    border-bottom: none;
+}
+.accordion-title {
+    background: #007bff;
+    color: white;
+    cursor: pointer;
+    padding: 10px;
+    position: relative;
+}
+.accordion-title::after {
+    content: '\25BC';
+    font-size: 16px;
+    position: absolute;
+    right: 10px;
+    top: 15px;
+}
+.accordion-title.active::after {
+    content: '\25B2';
+}
+.accordion-content {
+    display: none;
+    padding: 10px;
+    background: #f1f1f1;
+}
+.accordion-content.show {
+    display: block;
+}
+.multiple-checkbox {
+    margin: 10px 0;
+}
